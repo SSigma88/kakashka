@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>A-Frame сцена — Виправлений Тор</title>
   <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
 </head>
 <body style="margin: 0;">
 
@@ -17,7 +18,7 @@
       >
     </a-assets>
 
-    <a-sky color="#8c8c8c"></a-sky>
+    <!--<a-sky color="#8c8c8c"></a-sky>-->
 
     <a-light type="ambient" color="#bbbbbb" intensity="1"></a-light>
     <a-light type="directional" color="#ffffff" intensity="0.8" position="0 4 2" rotation="-45 0 0"></a-light>
@@ -45,7 +46,7 @@ src="https://raw.githubusercontent.com/aframevr/assets/
 master/test-models/models/glTF-2.0/brainstem/
 BrainStem.gltf"></a-asset-item>
 </a-assets>
-<a-sky color="grey"></a-sky>
+<!--<a-sky color="grey"></a-sky>-->
 <a-torus position="-2 1 -5" color="green" radius="1.2"
 animation="property: components.material.material.color;
 type: color; from: green; to: white; loop: true; dur: 10000">
@@ -67,7 +68,6 @@ dur: 10000"></a-torus-knot>
       <a-sphere radius="1.5" src="fenek.png"></a-sphere>
       <a-cylinder color="yellow" height="4" radius="0.1"></a-cylinder>
 </a-entity>
-<p style="color: #291b16;"></p>
 <a-text value="Вітаю y браузерній VR!" color="#291b16"
 width="10" position="1 1 -8.9" font="19-font-msdf.json"
 negate="false"></a-text>
@@ -85,7 +85,7 @@ negate="false"></a-text>
              loop: true; 
              dur: 2000">
 </a-text>
-<a-videosphere src="#city"></a-videosphere>
+<!--<a-videosphere src="#city"></a-videosphere>-->
 <a-obj-model src="#crate-obj" mtl="#crate-mtl"
 position="2.5 -1 -5"></a-obj-model>
 <a-gltf-model src="little_cat.glb" position="2 0.02 -5" 
